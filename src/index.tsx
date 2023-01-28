@@ -27,7 +27,9 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <div style={{backgroundColor: '#d9d9d9'}}>
       <RouterProvider router={router} />
+      </div>
     </ThemeProvider>
   </React.StrictMode>
 )

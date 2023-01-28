@@ -41,8 +41,8 @@ export default function Footer() {
       <Box
         component="footer"
         sx={{
-          py: 3,
           px: 2,
+          py: 3,
           mt: 'auto',
           backgroundColor: (theme) =>
             theme.palette.mode === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
