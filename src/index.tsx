@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainPage from './routes/main'
-import MediaPage from './routes/media'
 import ErrorPage from './components/error-page'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import theme from './theme'
@@ -16,19 +15,14 @@ const router = createBrowserRouter([
     element: <MainPage />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: '/media',
-    element: <MediaPage />,
-    errorElement: <ErrorPage />,
-  },
 ])
 
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div style={{backgroundColor: '#d9d9d9'}}>
-      <RouterProvider router={router} />
+      <div style={{ backgroundColor: '#d9d9d9' }}>
+        <RouterProvider router={router} />
       </div>
     </ThemeProvider>
   </React.StrictMode>
